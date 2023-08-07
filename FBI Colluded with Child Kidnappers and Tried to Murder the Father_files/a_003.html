@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  
+                  
+    
+  
+
+
+
+  
+        
+        
+        
+  
+    
+    
+    
+            
+
+  <meta charset="utf-8">
+  <meta name="land" content="740211;28608;45507"> 
+  <meta name="multigeo" content="false"> 
+                                  <meta name="translations" content="it de fr es pt en ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="google" value="notranslate">
+  <style type="text/css" rel="reset">
+    html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{appearance:textfield;-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{appearance:textfield;-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{appearance:textfield;-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+  </style>
+  
+          
+  <script>
+  window.osVerUA = '';
+
+  if (navigator.userAgentData && navigator.userAgentData.getHighEntropyValues) {
+    navigator.userAgentData.getHighEntropyValues(["platformVersion"])
+      .then((uaData) => {
+        if (uaData.platformVersion) {
+          window.osVerUA = `&os_version=${uaData.platformVersion}`;
+        }
+      });
+  }
+</script>  
+ 
+
+  
+  
+
+<link rel="stylesheet" href="a_data_003/style.css">
+
+
+		
+
+
+  
+  
+  
+  <title>
+          Attention!      </title>
+
+  
+      <style type="text/css" rel="customCSS">
+      .block {padding:0}    </style>
+  
+  
+  
+  
+  
+  
+</head>
+<body class="en ltr viewport-desktop-zoom viewport-desktop-zoom-NaN viewport-os-macosx viewport-screen-orientation-landscape viewport-creative-size-slider" style="cursor: pointer;">
+  
+        
+    <div rel="age" style="display:none;position:fixed;top:1em;right:1em;font-size:1em;color:#fff;background-color:rgba(255,0,0,.8);width:2em;height:2em;border-radius:1.5em;text-align:center;line-height:2em;z-index:999;"><span>0+</span></div>
+  
+
+  
+<script>
+  // IE Promise polyfill
+  !function(e,n){"object"==typeof exports&&"undefined"!=typeof module?n():"function"==typeof define&&define.amd?define(n):n()}(0,function(){"use strict";function e(){}function n(e){if(!(this instanceof n))throw new TypeError("Promises must be constructed via new");if("function"!=typeof e)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=undefined,this._deferreds=[],f(e,this)}function t(e,t){for(;3===e._state;)e=e._value;0!==e._state?(e._handled=!0,n._immediateFn(function(){var n=1===e._state?t.onFulfilled:t.onRejected;if(null!==n){var i;try{i=n(e._value)}catch(f){return void r(t.promise,f)}o(t.promise,i)}else(1===e._state?o:r)(t.promise,e._value)})):e._deferreds.push(t)}function o(e,t){try{if(t===e)throw new TypeError("A promise cannot be resolved with itself.");if(t&&("object"==typeof t||"function"==typeof t)){var o=t.then;if(t instanceof n)return e._state=3,e._value=t,void i(e);if("function"==typeof o)return void f(function(e,n){return function(){e.apply(n,arguments)}}(o,t),e)}e._state=1,e._value=t,i(e)}catch(u){r(e,u)}}function r(e,n){e._state=2,e._value=n,i(e)}function i(e){2===e._state&&0===e._deferreds.length&&n._immediateFn(function(){e._handled||n._unhandledRejectionFn(e._value)});for(var o=0,r=e._deferreds.length;r>o;o++)t(e,e._deferreds[o]);e._deferreds=null}function f(e,n){var t=!1;try{e(function(e){t||(t=!0,o(n,e))},function(e){t||(t=!0,r(n,e))})}catch(i){if(t)return;t=!0,r(n,i)}}var u=function(e){var n=this.constructor;return this.then(function(t){return n.resolve(e()).then(function(){return t})},function(t){return n.resolve(e()).then(function(){return n.reject(t)})})},c=setTimeout;n.prototype["catch"]=function(e){return this.then(null,e)},n.prototype.then=function(n,o){var r=new this.constructor(e);return t(this,new function(e,n,t){this.onFulfilled="function"==typeof e?e:null,this.onRejected="function"==typeof n?n:null,this.promise=t}(n,o,r)),r},n.prototype["finally"]=u,n.all=function(e){return new n(function(n,t){function o(e,f){try{if(f&&("object"==typeof f||"function"==typeof f)){var u=f.then;if("function"==typeof u)return void u.call(f,function(n){o(e,n)},t)}r[e]=f,0==--i&&n(r)}catch(c){t(c)}}if(!e||"undefined"==typeof e.length)throw new TypeError("Promise.all accepts an array");var r=Array.prototype.slice.call(e);if(0===r.length)return n([]);for(var i=r.length,f=0;r.length>f;f++)o(f,r[f])})},n.resolve=function(e){return e&&"object"==typeof e&&e.constructor===n?e:new n(function(n){n(e)})},n.reject=function(e){return new n(function(n,t){t(e)})},n.race=function(e){return new n(function(n,t){for(var o=0,r=e.length;r>o;o++)e[o].then(n,t)})},n._immediateFn="function"==typeof setImmediate&&function(e){setImmediate(e)}||function(e){c(e,0)},n._unhandledRejectionFn=function(e){void 0!==console&&console&&console.warn("Possible Unhandled Promise Rejection:",e)};var l=function(){if("undefined"!=typeof self)return self;if("undefined"!=typeof window)return window;if("undefined"!=typeof global)return global;throw Error("unable to locate global object")}();l.Promise?l.Promise.prototype["finally"]||(l.Promise.prototype["finally"]=u):l.Promise=n});
+</script>
+
+<script type="text/javascript" async="">
+  (function (s,w) {
+	w.viewportInfo = function () {
+	  return new Promise (function(resolve, reject) {
+		let info = { height: 0, width: 0, screen: null, osFamily: 'macosx' };
+		let resizeTimer;
+		function getViewportInfo () {
+		  clearTimeout(resizeTimer);
+		  resizeTimer = setTimeout(function () {
+			info.height = w.innerHeight;
+			info.width = w.innerWidth;
+			info.screen = s;
+			w.removeEventListener('resize', getViewportInfo, false);
+			resolve(info);
+		  }, 100);
+		}
+		w.addEventListener('load', getViewportInfo, false);
+		w.addEventListener('resize', getViewportInfo, false);
+	  });
+	};
+  })(screen, window);
+  (function (d, s, w) {
+	function addClass (el, className) {
+	  if (el.classList) { el.classList.add(className); }
+	  else { el.className += ' ' + className; }
+	}
+	function removeClass (el, className) {
+	  if (el.classList) { el.classList.remove(className); }
+	  else { el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' '); }
+	}
+	function checkOrientation (info) {
+	  if (typeof info.screen.orientation !== 'undefined') {
+		if (info.screen.orientation.type == 'portrait-primary') {
+		  addClass(d.body, 'viewport-screen-orientation-portrait');
+		  removeClass(d.body, 'viewport-screen-orientation-landscape');
+		} else {
+		  removeClass(d.body, 'viewport-screen-orientation-portrait');
+		  addClass(d.body, 'viewport-screen-orientation-landscape');
+		}	
+	  }
+	}
+	function checkCreativeSize (info) {
+	  var width = parseInt((info.width * 100)/info.screen.width);
+	  var height = parseInt((info.height * 100)/info.screen.height);
+	  if (width > 90 && height > 90) {
+		addClass(d.body, 'viewport-creative-size-fullscreen');
+		removeClass(d.body, 'viewport-creative-size-not-fullscreen');
+		removeClass(d.body, 'viewport-creative-size-slider');
+	  } else {
+		if (width > 50 && height > 50) {
+		  addClass(d.body, 'viewport-creative-size-not-fullscreen');
+		  removeClass(d.body, 'viewport-creative-size-fullscreen');
+		  removeClass(d.body, 'viewport-creative-size-slider');
+		} else {
+		  addClass(d.body, 'viewport-creative-size-slider');
+		  removeClass(d.body, 'viewport-creative-size-fullscreen');
+		  removeClass(d.body, 'viewport-creative-size-not-fullscreen');
+		}
+	  }
+	}
+	
+	function vpzn(str) {
+	  return Math.ceil(parseFloat(str).toFixed(2) * 10);
+	}
+    
+    /**
+     * A global promise for getting traffic quality and zone settings from top
+     * level frame
+     */
+    window.trafficQualityAndZoneSettings = new Promise(function(resolve, reject) {
+      var timeout;
+      
+      var listener = function (e) {
+        if (e.data.trafficQuality && e.data.zoneSettings) {
+          window.removeEventListener('message', listener);
+          clearTimeout(timeout);
+          resolve(e.data);
+        }
+        else {
+          resolve(); // An unfortunate case when there's no data (probably won't happen)
+        }
+      }
+      
+      timeout = setTimeout(resolve, 1000);
+      window.addEventListener('message', listener);
+	  window.top.postMessage('getTrafficQualityAndZoneSettings', '*');
+      
+    });
+
+    window.trafficQualityAndZoneSettings.then(function(data) {
+      if (data) {
+        if (data.zoneSettings) {
+		  if (data.zoneSettings.desktopZoom !== null) {
+		    addClass(d.body, 'viewport-desktop-zoom');
+		    addClass(d.body, 'viewport-desktop-zoom-' + vpzn(data.zoneSettings.desktopZoom));
+		  }
+		  if (data.zoneSettings.mobileZoom !== null && data.zoneSettings.desktopZoom === null) {
+		    addClass(d.body, 'viewport-mobile-zoom');
+		    addClass(d.body, 'viewport-mobile-zoom-' + vpzn(data.zoneSettings.mobileZoom));
+		  }
+	    }  
+      }
+    });
+    
+	viewportInfo().then(function (info) {
+	  removeClass(d.body, 'viewport-loading');
+	  addClass(d.body, 'viewport-os-' + info.osFamily);
+	  checkOrientation(info);
+	  checkCreativeSize(info);
+	});
+	w.addEventListener('orientationchange', function () {
+	  viewportInfo().then(function (info) {
+		checkOrientation(info);
+		checkCreativeSize(info);
+	  });
+	}, false);
+  })(document, screen, window);
+</script>
+
+  
+
+
+<div class="block">
+	<div class="blockShadow">
+		<div class="top clearfix">
+			<div class="logo fl ">
+				<img src="a_data_003/01155159467285.png" class="iconDownload install-button">
+			</div>
+			<div class="headers fl">
+				<div style="width:100%; display: block;">
+					<h1 style="float left; position relative; display:inline-block;width: 69%;">+ADD browser applications.</h1>
+					<h1 style="float left; position relative; display:inline-block;text-align: right;width: 30%;">Step 1</h1>
+				</div>
+				<p class="f-line">Search by browser applications - The best way to 
+search. This extension lets you browse the web and get easy access to 
+search, images, videos and news. This is a single purpose extension.</p>
+			</div>
+		</div>
+		<div class="gray">
+			<div class="grayBox">
+				<p>PLEASE READ THE TERMS OF USE ("TERMS") CAREFULLY BEFORE USING THIS EXTENSION.</p><div class="main-content"><p>This
+ Web site is provided to you free of charge, "as is," by browser 
+applications. You are only authorized to use the browser applications 
+Services (regardless of whether your access or use is intended) if you 
+agree to abide by all applicable laws and to this Agreement. Please read
+ this Agreement carefully.</p><p>By using this site, you acknowledge 
+that browser applicationssite will not be liable for any damages, claims
+ or other liability arising from and / or related use of Web sites owned
+ by third parties. These terms of Service ("Terms") and browser 
+applications's privacy policy (the "privacy policy") are the accesses 
+and terms of your use on the website. Using this site is an adult or a 
+parent or and / or guardian of any minor who approved the use of the Web
+ Site and all those who take responsibility for a minor for using this 
+site. browser applications keep the right to update these terms from 
+time to time and will post the updated terms on the website or provide 
+you with a notice via email. We will also update the "last updated on" 
+date below. Make sure you read these Terms and the Privacy Policy 
+carefully.</p><h2>License &amp; Use Restrictions</h2>Subject to your 
+compliance with these Terms, browser applications hereby grant you a 
+limited, personal, non-transferable, non-sublicensable, license to use 
+browser applications on applicable devices that are under your control, 
+provided that you will fully comply with the terms and conditions of 
+these Terms and our Privacy Policy. You may not do any of the following:
+ (1) Interfere with the security of the site in any way. (2) Use the 
+Website which overloads the site infrastructure. (3) Use the site in a 
+way that violates or disrupts the services it provides. (4) Make any use
+ of a site that violates the legal rights of any user of the site. (5) 
+Use the site illegally. (6) Use the Site in violation of applicable law 
+or regulation.<p>We reserve the right at our sole discretion to suspend,
+ remove, or disable your access to browser applications at any time and 
+without notice. In no event will we be liable for the suspension, 
+removal of or disabling of your access to browser applications or to any
+ feature available therein.</p><p></p><h2>Copyright</h2><p><b>"Intellectual Property"</b>
+ – including any and all trade secrets, patents, copyrights, trademarks,
+ service marks, URLs, trade dress, brand features, know-how, moral 
+rights, contract rights, code (executable, source and other) and similar
+ rights of any type under the laws of any applicable governmental 
+authority, or international treaty, including, without limitation, all 
+applications and registrations relating to any of the foregoing. 
+Intellectual Property shall mean all intellectual property whether 
+registered or not and whether reduced into practice or not.</p><p>The 
+message on these Web sites may contain material that has been copied 
+from another individual or entity. Please contact us if you believe 
+someone has posted copyrighted information on a message contained on 
+these Web sites.</p><h2>Indemnification</h2><p>You agree to indemnify and to hold browser applications ("<b>Indemnifying Party</b>")
+ site harmless, and indemnify browser applications from and against any 
+expenses (including attorney fees) arising from claims of third parties 
+made against or incurred by the Indemnified Party as a result of 
+negligence, misrepresentation, error or omission on the part of the 
+Indemnifying Party or any employee, agent or representative of the 
+Indemnifying Party, or any breach of this Agreement by the Indemnifying 
+Party, regardless of whether such claims were foreseeable by the 
+Indemnified Party. The Indemnified Party will have the right to 
+participate, at its expense, in the defense of any claim covered 
+hereunder with counsel of its own choosing. The Indemnified Party shall 
+give the Indemnifying Party prompt notice of any such claim and shall 
+reasonably cooperate with the Indemnifying Party and its counsel in the 
+defense of such claim.</p><p></p><h2>WARRANTIES</h2><p>browser 
+applications DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT
+ NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE, AND EXCEPT AS EXPLICITLY SET FORTH IN THIS 
+AGREEMENT, ALL CONTENT ON THE SITE IS PROVIDED "AS-IS". browser 
+applications DOES NOT WARRANT THAT THE LICENSED SITE IS ERROR-FREE OR 
+FREE FROM INTERRUPTIONS OR OTHER FAILURES OR THAT THE SITE WILL MEET 
+DISTRIBUTOR'S OR THE END CUSTOMER'S REQUIREMENTS.</p><p>IN NO EVENT 
+SHALL browser applications, OR ANY OF ITS AFFILIATES, OR ANY OF ITS OR 
+THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, 
+REPRESENTATIVES, PARTNERS, MEMBERS, ADVERTISERS, OR INFORMATION 
+PROVIDERS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+CONSEQUENTIAL, PUNITIVE OR OTHER DAMAGES (REGARDLESS OF THE FORM OF 
+ACTION), OR FOR ANY LOSS OF PROFITS, REVENUES, BUSINESS OPPORTUNITIES, 
+DATA OR USE OF SYSTEMS, ARISING OUT OF (i) USE OF THE PRODUCT BY ANY 
+PERSON, INCLUDING BUT NOT LIMITED TO, ANY DAMAGE CAUSED BY ANY RELIANCE 
+ON, OR ANY DELAYS, INACCURACIES, DEFECTS, MALFUNCTIONS, ERRORS OR 
+OMISSIONS IN, ANY INFORMATION, CONTENT OR SOFTWARE ACCESSED VIA THE 
+PRODUCT, OR (ii) ANY USE OR INABILITY TO USE THE PRODUCT FOR WHATEVER 
+REASON, INCLUDING BUT NOT LIMITED TO COMMUNICATIONS FAILURE OR ANY OTHER
+ FAILURE WITH TRANSMISSION OR DELIVERY OF ANY INFORMATION ACCESSED 
+THROUGH THE PRODUCT. SOME JURISDICTIONS DO NOT ALLOW THESE LIMITATIONS 
+OR EXCLUSIONS SO THEY MAY NOT APPLY TO YOU.</p><p>IF YOU ARE DISSATISFIED WITH THIS WEB SITE, OR ANY PORTION THEREOF, YOUR EXCLUSIVE REMEDY SHALL BE TO CEASE USING THE WEB SITE.</p><h2>Limitation of Liability</h2><p>WITHOUT
+ LIMITING THE FOREGOING, NEITHER browser applications NOR ANY OF ITS 
+AFFILIATES, NOR ANY OF THEIR OFFICERS, DIRECTORS, LICENSORS, EMPLOYEES 
+OR REPRESENTATIVES REPRESENT OR WARRANT (I) THAT THE PRODUCT, INCLUDING 
+ITS CONTENT, WILL MEET YOUR REQUIREMENTS OR BE ACCURATE, COMPLETE, 
+RELIABLE, OR ERROR-FREE; (II) THAT THE PRODUCT WILL ALWAYS BE AVAILABLE 
+OR WILL BE UNINTERRUPTED, ACCESSIBLE, TIMELY, OR SECURE; (III) THAT ANY 
+DEFECTS WILL BE CORRECTED, OR THAT THE PRODUCT WILL BE FREE FROM 
+VIRUSES, "WORMS," "TROJAN HORSES" OR OTHER HARMFUL PROPERTIES; (IV) THE 
+ACCURACY, RELIABILITY, TIMELINESS, OR COMPLETENESS OF ANY REVIEW, 
+RECOMMENDATION, OR OTHER MATERIAL PUBLISHED OR ACCESSIBLE ON OR THROUGH 
+THE PRODUCT; (V) ANY IMPLIED WARRANTY ARISING FROM COURSE OF DEALING OR 
+USAGE OF TRADE; AND (VI) THAT THE PRODUCT IS NONINFRINGING. browser 
+applications AND ITS AFFILIATES HEREBY DISCLAIM, AND YOU HEREBY WAIVE 
+AND RELEASE browser applications AND ITS AFFILIATES FROM, ANY AND ALL 
+OBLIGATIONS, LIABILITIES, RIGHTS, CLAIMS, OR REMEDIES IN TORT ARISING 
+OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE PRODUCT, WHETHER OR 
+NOT ARISING FROM THE NEGLIGENCE (ACTIVE, PASSIVE OR IMPUTED) OF browser 
+applications OR ANY OF ITS AFFILIATES. SOME JURISDICTIONS DO NOT ALLOW 
+THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSIONS MAY NOT 
+APPLY TO YOU. YOU MAY ALSO HAVE OTHER LEGAL RIGHTS, WHICH VARY FROM 
+JURISDICTION TO JURISDICTION.</p><h2>Miscellaneous</h2><p>THIS AGREEMENT
+ SHALL BE CONSTRUED AND ENFORCED IN ACCORDANCE WITH THE LAWS OF ISRAEL, 
+WITHOUT REFERENCE TO ITS CONFLICTS OF LAW PRINCIPLES. The courts located
+ in Tel-Aviv Israel SHALL have exclusive jurisdiction to adjudicate any 
+dispute arising out of this Agreement and each party hereby expressly 
+consents to the personal jurisdiction of such courts. A determination 
+that any term of this Agreement is invalid or unenforceable shall not 
+affect the other terms thereof. Section headings are for convenience of 
+reference only and shall not affect the interpretation of this 
+Agreement.</p></div>			</div>
+		</div>
+		<p class="disclamer">By clicking the button and adding browser 
+applications Firefox extension, I accept and agree to abide by the End 
+User License Agreement and Privacy Policy.</p>
+		<div class="clearfix bigbtn-container downloadButtonBlue btnpram ">
+			<div class="bigbtn fr buttonLink install-button">
+				<a rel="noreferrer noopener" href="https://eedsaung.net/12?rnd=2108735633&amp;z=5357346&amp;b=16955039&amp;c=6691836&amp;var=&amp;varid=0&amp;d=https%3A%2F%2F357.trackints.com%2FadServe%2Faff%3Foid%3D752841%26pid%3D158327%26subid%3D%24%7BSUBID%7D&amp;cln=1&amp;btp=7&amp;rb=ptoLYEeGWwypKhKrLKjRMiKMZ4I01yn7Qc74_rYnu5XtoOFjp_t0Z6SJ2Q4mA9EeymzK30gFwydp0KXJ9NWSdq_bewHmM6LydUwlLqkmxnztxYczS8On_OzFGlwYpsW7A2XrDS9fuIhDHa1SW-JsBXexn992oPRcsCtmzLuxadBOhhNdBOT9IIVUSakxwsz7aRl6IP1_nIycWwGRFbx0JcCwaXAUNzqymAxYQ1eWcgqZ56i-hFnzi6hp9lMP3jyND7pCrfSkN9A6wh9-04Tw8p1BbMuWYphoM87vDN1ysy8x6ntUAMi51sm7XKUAno5o5HL6HRd0bzz1OyrxAVJtRpLUZYEzjoWILhFIvShrdgAgZzJJqYkfGzGxYMDe7PnXwMjlucztfzlc0tNcFroq1ouCP8XZgjMJKBQA51yfGa8wbWhfrPE-vDHi5djqELjG3vhQuJqHNiPoF4rd1-7oRAmZgRXJEEIhNOtb3HYAf5cqxyizOYPTIjNmwhLd7-5UigN4Jb1VpcZHatyO4GDzXl7mHt9LUAqftyCwkuj_mBZO83NE91nkdGrVe0fIq5KPvOXxlMipQ6sFnRZJUKE88VpBQgUrUchdkq3iYn4cmXy564M2oATHPGdG8ZhTVXAs82t_34CCdwmNMqxhj0AoBjHxEnQ3JegKt_Z9j8JFS-zGuELITrY9eDeq7RDwnp6rEXjJStXytwTbsoQZjduYqm22WpZjcLYumdsPUmWYNkE=&amp;bag=far3cbNSBH4=&amp;ruid=cda8d241-225a-48f2-8d55-f13da4d0e5f5&amp;ng=1&amp;ix=0&amp;pt=0&amp;np=0&amp;gp=5&amp;bp=4&amp;nw=1&amp;nb=1&amp;sw=1792&amp;sh=1120&amp;pl=https%3A%2F%2Fwww.worldgreynews.com%2F289613%2Ffbi-colluded-with-child-kidnappers-and-tried-to-murder-the-father&amp;wy=33&amp;wx=0&amp;ww=1286&amp;wh=1020&amp;cw=1286&amp;wiw=1286&amp;wih=907&amp;wfc=3&amp;sah=1120&amp;drf=https%3A%2F%2Fwww.worldgreynews.com%2Fadd-news&amp;hil=1&amp;ist=0&amp;tbc=0">Accept and +Add</a>
+			</div>
+			<img src="a_data_003/badge.png" style="float:left; width:175px; padding: 0 15px;">
+		</div>
+	</div>
+</div>
+
+
+
+<script defer="defer">
+	window.addEventListener('DOMContentLoaded', () => {
+		const $body = document.body;
+		const $link = document.querySelector('.pagelink')
+		if (!$body || !$link) return;
+
+		$body.style.cursor = 'pointer';
+		$link.style.cursor = 'default';
+		$link.style.pointerEvents = 'none';
+
+		$body.addEventListener('click', () => $link.click());
+	});
+</script>
+
+<a class="pagelink" href="https://eedsaung.net/12?rnd=2108735633&amp;z=5357346&amp;b=16955039&amp;c=6691836&amp;var=&amp;varid=0&amp;d=https%3A%2F%2F357.trackints.com%2FadServe%2Faff%3Foid%3D752841%26pid%3D158327%26subid%3D%24%7BSUBID%7D&amp;cln=1&amp;btp=7&amp;rb=ptoLYEeGWwypKhKrLKjRMiKMZ4I01yn7Qc74_rYnu5XtoOFjp_t0Z6SJ2Q4mA9EeymzK30gFwydp0KXJ9NWSdq_bewHmM6LydUwlLqkmxnztxYczS8On_OzFGlwYpsW7A2XrDS9fuIhDHa1SW-JsBXexn992oPRcsCtmzLuxadBOhhNdBOT9IIVUSakxwsz7aRl6IP1_nIycWwGRFbx0JcCwaXAUNzqymAxYQ1eWcgqZ56i-hFnzi6hp9lMP3jyND7pCrfSkN9A6wh9-04Tw8p1BbMuWYphoM87vDN1ysy8x6ntUAMi51sm7XKUAno5o5HL6HRd0bzz1OyrxAVJtRpLUZYEzjoWILhFIvShrdgAgZzJJqYkfGzGxYMDe7PnXwMjlucztfzlc0tNcFroq1ouCP8XZgjMJKBQA51yfGa8wbWhfrPE-vDHi5djqELjG3vhQuJqHNiPoF4rd1-7oRAmZgRXJEEIhNOtb3HYAf5cqxyizOYPTIjNmwhLd7-5UigN4Jb1VpcZHatyO4GDzXl7mHt9LUAqftyCwkuj_mBZO83NE91nkdGrVe0fIq5KPvOXxlMipQ6sFnRZJUKE88VpBQgUrUchdkq3iYn4cmXy564M2oATHPGdG8ZhTVXAs82t_34CCdwmNMqxhj0AoBjHxEnQ3JegKt_Z9j8JFS-zGuELITrY9eDeq7RDwnp6rEXjJStXytwTbsoQZjduYqm22WpZjcLYumdsPUmWYNkE=&amp;bag=far3cbNSBH4=&amp;ruid=cda8d241-225a-48f2-8d55-f13da4d0e5f5&amp;ng=1&amp;ix=0&amp;pt=0&amp;np=0&amp;gp=5&amp;bp=4&amp;nw=1&amp;nb=1&amp;sw=1792&amp;sh=1120&amp;pl=https%3A%2F%2Fwww.worldgreynews.com%2F289613%2Ffbi-colluded-with-child-kidnappers-and-tried-to-murder-the-father&amp;wy=33&amp;wx=0&amp;ww=1286&amp;wh=1020&amp;cw=1286&amp;wiw=1286&amp;wih=907&amp;wfc=3&amp;sah=1120&amp;drf=https%3A%2F%2Fwww.worldgreynews.com%2Fadd-news&amp;hil=1&amp;ist=0&amp;tbc=0" style="cursor: default; pointer-events: none;"></a>
+
+
+
+
+
+  
+
+
+  
+
+
+  
+  
+  
+    
+
+  
+      
+                  <script type="text/javascript">
+          (function(w, d){
+            var isAndroid = /android/i.test(window.navigator.userAgent);
+            var isFacebookBrowser = /FBAV\//i.test(window.navigator.userAgent);
+            var ln = d.querySelectorAll("[href='https://eedsaung.net/12?rnd=2108735633&z=5357346&b=16955039&c=6691836&var=&varid=0&d=https%3A%2F%2F357.trackints.com%2FadServe%2Faff%3Foid%3D752841%26pid%3D158327%26subid%3D%24%7BSUBID%7D&cln=1&btp=7&rb=ptoLYEeGWwypKhKrLKjRMiKMZ4I01yn7Qc74_rYnu5XtoOFjp_t0Z6SJ2Q4mA9EeymzK30gFwydp0KXJ9NWSdq_bewHmM6LydUwlLqkmxnztxYczS8On_OzFGlwYpsW7A2XrDS9fuIhDHa1SW-JsBXexn992oPRcsCtmzLuxadBOhhNdBOT9IIVUSakxwsz7aRl6IP1_nIycWwGRFbx0JcCwaXAUNzqymAxYQ1eWcgqZ56i-hFnzi6hp9lMP3jyND7pCrfSkN9A6wh9-04Tw8p1BbMuWYphoM87vDN1ysy8x6ntUAMi51sm7XKUAno5o5HL6HRd0bzz1OyrxAVJtRpLUZYEzjoWILhFIvShrdgAgZzJJqYkfGzGxYMDe7PnXwMjlucztfzlc0tNcFroq1ouCP8XZgjMJKBQA51yfGa8wbWhfrPE-vDHi5djqELjG3vhQuJqHNiPoF4rd1-7oRAmZgRXJEEIhNOtb3HYAf5cqxyizOYPTIjNmwhLd7-5UigN4Jb1VpcZHatyO4GDzXl7mHt9LUAqftyCwkuj_mBZO83NE91nkdGrVe0fIq5KPvOXxlMipQ6sFnRZJUKE88VpBQgUrUchdkq3iYn4cmXy564M2oATHPGdG8ZhTVXAs82t_34CCdwmNMqxhj0AoBjHxEnQ3JegKt_Z9j8JFS-zGuELITrY9eDeq7RDwnp6rEXjJStXytwTbsoQZjduYqm22WpZjcLYumdsPUmWYNkE=&bag=far3cbNSBH4=&ruid=cda8d241-225a-48f2-8d55-f13da4d0e5f5&ng=1&ix=0&pt=0&np=0&gp=5&bp=4&nw=1&nb=1&sw=1792&sh=1120&pl=https%3A%2F%2Fwww.worldgreynews.com%2F289613%2Ffbi-colluded-with-child-kidnappers-and-tried-to-murder-the-father&wy=33&wx=0&ww=1286&wh=1020&cw=1286&wiw=1286&wih=907&wfc=3&sah=1120&drf=https%3A%2F%2Fwww.worldgreynews.com%2Fadd-news&hil=1&ist=0&tbc=0'], [data-href='https://eedsaung.net/12?rnd=2108735633&z=5357346&b=16955039&c=6691836&var=&varid=0&d=https%3A%2F%2F357.trackints.com%2FadServe%2Faff%3Foid%3D752841%26pid%3D158327%26subid%3D%24%7BSUBID%7D&cln=1&btp=7&rb=ptoLYEeGWwypKhKrLKjRMiKMZ4I01yn7Qc74_rYnu5XtoOFjp_t0Z6SJ2Q4mA9EeymzK30gFwydp0KXJ9NWSdq_bewHmM6LydUwlLqkmxnztxYczS8On_OzFGlwYpsW7A2XrDS9fuIhDHa1SW-JsBXexn992oPRcsCtmzLuxadBOhhNdBOT9IIVUSakxwsz7aRl6IP1_nIycWwGRFbx0JcCwaXAUNzqymAxYQ1eWcgqZ56i-hFnzi6hp9lMP3jyND7pCrfSkN9A6wh9-04Tw8p1BbMuWYphoM87vDN1ysy8x6ntUAMi51sm7XKUAno5o5HL6HRd0bzz1OyrxAVJtRpLUZYEzjoWILhFIvShrdgAgZzJJqYkfGzGxYMDe7PnXwMjlucztfzlc0tNcFroq1ouCP8XZgjMJKBQA51yfGa8wbWhfrPE-vDHi5djqELjG3vhQuJqHNiPoF4rd1-7oRAmZgRXJEEIhNOtb3HYAf5cqxyizOYPTIjNmwhLd7-5UigN4Jb1VpcZHatyO4GDzXl7mHt9LUAqftyCwkuj_mBZO83NE91nkdGrVe0fIq5KPvOXxlMipQ6sFnRZJUKE88VpBQgUrUchdkq3iYn4cmXy564M2oATHPGdG8ZhTVXAs82t_34CCdwmNMqxhj0AoBjHxEnQ3JegKt_Z9j8JFS-zGuELITrY9eDeq7RDwnp6rEXjJStXytwTbsoQZjduYqm22WpZjcLYumdsPUmWYNkE=&bag=far3cbNSBH4=&ruid=cda8d241-225a-48f2-8d55-f13da4d0e5f5&ng=1&ix=0&pt=0&np=0&gp=5&bp=4&nw=1&nb=1&sw=1792&sh=1120&pl=https%3A%2F%2Fwww.worldgreynews.com%2F289613%2Ffbi-colluded-with-child-kidnappers-and-tried-to-murder-the-father&wy=33&wx=0&ww=1286&wh=1020&cw=1286&wiw=1286&wih=907&wfc=3&sah=1120&drf=https%3A%2F%2Fwww.worldgreynews.com%2Fadd-news&hil=1&ist=0&tbc=0']");
+            for (i = 0; i < ln.length; ++i) {
+              if(ln[i].addEventListener) {
+                ln[i].addEventListener("click", function(e) {
+                  w.parent.postMessage('closeInterstitial', '*');
+                  if(isAndroid && isFacebookBrowser) {
+                    trackingFB();
+                  } else {
+                    tracking();
+                  }
+                  e.preventDefault();
+                });
+              } else {
+                if(ln[i].attachEvent) {
+                  ln[i].attachEvent("onclick", function(e) {
+                    w.parent.postMessage('closeInterstitial', '*');
+                    if(isAndroid && isFacebookBrowser) {
+                      trackingFB();
+                    } else {
+                      tracking();
+                    }
+                    e.preventDefault();
+                  });
+                }
+              }
+            }
+            function tracking() {
+              window.open("https://eedsaung.net/12?rnd=2108735633&z=5357346&b=16955039&c=6691836&var=&varid=0&d=https%3A%2F%2F357.trackints.com%2FadServe%2Faff%3Foid%3D752841%26pid%3D158327%26subid%3D%24%7BSUBID%7D&cln=1&btp=7&rb=ptoLYEeGWwypKhKrLKjRMiKMZ4I01yn7Qc74_rYnu5XtoOFjp_t0Z6SJ2Q4mA9EeymzK30gFwydp0KXJ9NWSdq_bewHmM6LydUwlLqkmxnztxYczS8On_OzFGlwYpsW7A2XrDS9fuIhDHa1SW-JsBXexn992oPRcsCtmzLuxadBOhhNdBOT9IIVUSakxwsz7aRl6IP1_nIycWwGRFbx0JcCwaXAUNzqymAxYQ1eWcgqZ56i-hFnzi6hp9lMP3jyND7pCrfSkN9A6wh9-04Tw8p1BbMuWYphoM87vDN1ysy8x6ntUAMi51sm7XKUAno5o5HL6HRd0bzz1OyrxAVJtRpLUZYEzjoWILhFIvShrdgAgZzJJqYkfGzGxYMDe7PnXwMjlucztfzlc0tNcFroq1ouCP8XZgjMJKBQA51yfGa8wbWhfrPE-vDHi5djqELjG3vhQuJqHNiPoF4rd1-7oRAmZgRXJEEIhNOtb3HYAf5cqxyizOYPTIjNmwhLd7-5UigN4Jb1VpcZHatyO4GDzXl7mHt9LUAqftyCwkuj_mBZO83NE91nkdGrVe0fIq5KPvOXxlMipQ6sFnRZJUKE88VpBQgUrUchdkq3iYn4cmXy564M2oATHPGdG8ZhTVXAs82t_34CCdwmNMqxhj0AoBjHxEnQ3JegKt_Z9j8JFS-zGuELITrY9eDeq7RDwnp6rEXjJStXytwTbsoQZjduYqm22WpZjcLYumdsPUmWYNkE=&bag=far3cbNSBH4=&ruid=cda8d241-225a-48f2-8d55-f13da4d0e5f5&ng=1&ix=0&pt=0&np=0&gp=5&bp=4&nw=1&nb=1&sw=1792&sh=1120&pl=https%3A%2F%2Fwww.worldgreynews.com%2F289613%2Ffbi-colluded-with-child-kidnappers-and-tried-to-murder-the-father&wy=33&wx=0&ww=1286&wh=1020&cw=1286&wiw=1286&wih=907&wfc=3&sah=1120&drf=https%3A%2F%2Fwww.worldgreynews.com%2Fadd-news&hil=1&ist=0&tbc=0", "_blank", "noopener noreferrer");
+            }
+            function trackingFB() {
+              window.open("https://eedsaung.net/12?rnd=2108735633&z=5357346&b=16955039&c=6691836&var=&varid=0&d=https%3A%2F%2F357.trackints.com%2FadServe%2Faff%3Foid%3D752841%26pid%3D158327%26subid%3D%24%7BSUBID%7D&cln=1&btp=7&rb=ptoLYEeGWwypKhKrLKjRMiKMZ4I01yn7Qc74_rYnu5XtoOFjp_t0Z6SJ2Q4mA9EeymzK30gFwydp0KXJ9NWSdq_bewHmM6LydUwlLqkmxnztxYczS8On_OzFGlwYpsW7A2XrDS9fuIhDHa1SW-JsBXexn992oPRcsCtmzLuxadBOhhNdBOT9IIVUSakxwsz7aRl6IP1_nIycWwGRFbx0JcCwaXAUNzqymAxYQ1eWcgqZ56i-hFnzi6hp9lMP3jyND7pCrfSkN9A6wh9-04Tw8p1BbMuWYphoM87vDN1ysy8x6ntUAMi51sm7XKUAno5o5HL6HRd0bzz1OyrxAVJtRpLUZYEzjoWILhFIvShrdgAgZzJJqYkfGzGxYMDe7PnXwMjlucztfzlc0tNcFroq1ouCP8XZgjMJKBQA51yfGa8wbWhfrPE-vDHi5djqELjG3vhQuJqHNiPoF4rd1-7oRAmZgRXJEEIhNOtb3HYAf5cqxyizOYPTIjNmwhLd7-5UigN4Jb1VpcZHatyO4GDzXl7mHt9LUAqftyCwkuj_mBZO83NE91nkdGrVe0fIq5KPvOXxlMipQ6sFnRZJUKE88VpBQgUrUchdkq3iYn4cmXy564M2oATHPGdG8ZhTVXAs82t_34CCdwmNMqxhj0AoBjHxEnQ3JegKt_Z9j8JFS-zGuELITrY9eDeq7RDwnp6rEXjJStXytwTbsoQZjduYqm22WpZjcLYumdsPUmWYNkE=&bag=far3cbNSBH4=&ruid=cda8d241-225a-48f2-8d55-f13da4d0e5f5&ng=1&ix=0&pt=0&np=0&gp=5&bp=4&nw=1&nb=1&sw=1792&sh=1120&pl=https%3A%2F%2Fwww.worldgreynews.com%2F289613%2Ffbi-colluded-with-child-kidnappers-and-tried-to-murder-the-father&wy=33&wx=0&ww=1286&wh=1020&cw=1286&wiw=1286&wih=907&wfc=3&sah=1120&drf=https%3A%2F%2Fwww.worldgreynews.com%2Fadd-news&hil=1&ist=0&tbc=0", "_top", "noopener noreferrer");
+            }
+          })(window, document);
+        </script>
+            
+  
+  
+  
+
+
+
+
+
+  
+
+
+
+  <div style="display:none;"><a href="https://glugreez.com/4/1569265?var=${SUBID}">Go to site</a></div>
+
+
+
+</body></html>
